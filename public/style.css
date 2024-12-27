@@ -1,0 +1,47 @@
+body { margin: 0; padding: 0; overflow: hidden; }
+
+.player-name {
+    color: white;
+    font-size: 12px;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 2px 4px;
+    border-radius: 4px;
+  }
+
+
+.chat-bubble {
+    display: block;
+    position: relative;
+    width: auto;
+    max-width: 150px;
+    background: transparent;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 14px;
+    overflow: hidden;
+}
+
+.chat-message {
+    background: rgba(0, 0, 0, 0.7);
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin: 5px 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    animation: slideUp 0.3s ease-in-out;
+}
+
+@keyframes slideUp {
+    from {
+        transform: translateY(10px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
